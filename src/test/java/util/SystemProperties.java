@@ -6,9 +6,7 @@ import java.util.Properties;
 
 public class SystemProperties {
     // Required Variables
-    public static final String FB_APPLICATION_HOST;
-    public static final String FB_APPLICATION_USER_NAME;
-    public static final String FB_APPLICATION_USER_PASSWORD;
+    public static final String SAUCE_DEMO_URl;
     public static final String RUNTIME_ENV;
     public static final String BUILD_ID;
     public static final String REMOTE_DRIVER_URL;
@@ -43,8 +41,7 @@ public class SystemProperties {
         REMOTE_DRIVER_BROWSER_NAME = properties.getProperty("remote.driver.browser.name", "chrome");
         REMOTE_DRIVER_BROWSER_VERSION = properties.getProperty("remote.driver.browser.version", "94.0");
 
-        FB_APPLICATION_HOST = properties.getProperty("fb.app.url");
-        FB_APPLICATION_USER_NAME = System.getenv("FB_APPLICATION_USER_NAME");
-        FB_APPLICATION_USER_PASSWORD = System.getenv("FB_APPLICATION_USER_PASSWORD");
+        SAUCE_DEMO_URl = properties.getProperty("sd.app.url");
+
     }
 }
