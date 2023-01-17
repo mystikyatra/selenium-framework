@@ -13,9 +13,8 @@ public class SystemProperties {
     public static final String REMOTE_DRIVER_BROWSER_NAME;
     public static final String REMOTE_DRIVER_BROWSER_VERSION;
 
-    private SystemProperties(){
-            }
-    private Properties readProperties(){
+
+    public Properties readProperties(){
         InputStream is = this.getClass().getClassLoader().getResourceAsStream("config/automation-tests.properties");
 
         Properties properties = new Properties();
@@ -45,3 +44,7 @@ public class SystemProperties {
 
     }
 }
+
+
+
+
